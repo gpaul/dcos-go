@@ -178,19 +178,16 @@ func (t *dcosRoundtripper) RoundTrip(req *http.Request) (*http.Response, error) 
 			req.Header.Set("Authorization", "token="+token)
 		}
 	}
-
 	var (
 		resp *http.Response
 		err  error
 	)
-
 	// try first time
 	addAuthToken()
 	resp, err = t.transport.RoundTrip(req)
 	if err != nil {
 		return resp, err
 	}
-
 	// if request returned 401 retry one more time.
 	if resp.StatusCode == http.StatusUnauthorized {
 		if err := t.GenerateToken(); err != nil {
