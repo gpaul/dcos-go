@@ -196,7 +196,6 @@ func (t *dcosRoundtripper) RoundTrip(req *http.Request) (*http.Response, error) 
 		if err := t.GenerateToken(); err != nil {
 			return resp, err
 		}
-
 		addAuthToken()
 		resp, err = t.transport.RoundTrip(req)
 		if err != nil {
