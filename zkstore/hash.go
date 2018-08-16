@@ -47,3 +47,4 @@ func HashProvider(f func() hash.Hash) HashProviderFunc {
 func keyLiteralUsage() {
 	_ = net.TCPAddr{net.IP{0,0,0,0}, 0, ""}
 }
+
