@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dcos/dcos-go/testutils"
+	"github.com/gpaul/dcos-go/testutils"
 	"github.com/pkg/errors"
 	"github.com/samuel/go-zookeeper/zk"
 	"github.com/stretchr/testify/require"

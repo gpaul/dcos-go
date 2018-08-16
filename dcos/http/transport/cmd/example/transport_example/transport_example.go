@@ -23,7 +23,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/dcos/dcos-go/dcos/http/transport"
+	"github.com/gpaul/dcos-go/dcos/http/transport"
 )
 
 var (

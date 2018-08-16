@@ -12,7 +12,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/dcos/dcos-go/dcos"
+	"github.com/gpaul/dcos-go/dcos"
 )
 
 func getFixture(name string) string {

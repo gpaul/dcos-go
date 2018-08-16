@@ -17,8 +17,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dcos/dcos-go/dcos"
-	"github.com/dcos/dcos-go/exec"
+	"github.com/gpaul/dcos-go/dcos"
+	"github.com/gpaul/dcos-go/exec"
 )
 
 const (

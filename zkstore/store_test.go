@@ -11,7 +11,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/dcos/dcos-go/testutils"
+	"github.com/gpaul/dcos-go/testutils"
 	"github.com/samuel/go-zookeeper/zk"
 	"github.com/stretchr/testify/require"
 )
