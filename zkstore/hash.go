@@ -4,6 +4,7 @@ import (
 	"crypto/md5"
 	"encoding/binary"
 	"hash"
+	"net"
 )
 
 // HashProviderFunc is a factory for hashers.
@@ -41,4 +42,8 @@ func HashProvider(f func() hash.Hash) HashProviderFunc {
 		}
 		return y, nil
 	}
+}
+
+func keyLiteralUsage() {
+	_ = net.TCPAddr{net.IP{0,0,0,0}, 0, ""}
 }
