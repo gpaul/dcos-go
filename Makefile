@@ -8,3 +8,4 @@ clean:
 .PHONY: test
 test:
 	bash -c './scripts/test.sh'
+
