@@ -14,7 +14,6 @@ type HashProviderFunc func(string) (uint64, error)
 var DefaultHashProviderFunc = HashProvider(md5.New)
 
 // hashBytesToBucket produces a positive int from a hashed byte slice
-func hashBytesToBucket(bucketCount int, res uint64) int {
 	mod := res % uint64(bucketCount)
 	return int(mod)
 }
